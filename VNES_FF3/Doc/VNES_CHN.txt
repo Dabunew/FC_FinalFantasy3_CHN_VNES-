@@ -1,0 +1,23 @@
+CPU		指令解释
+MMU		内存分配、BANK切换
+			CPUBACKUP[256]
+			*CPU_MEM_BANK[8]
+			*PPU_MEM_BANK[12]
+			RAM[8196]
+			WRAM[128K]
+			CRAM[32K]
+			VRAM[4K]
+			*PROM
+			*VROM
+NES		模拟
+PAD		手柄
+ROM		将文件调入内存
+EMUTHEAD	游戏控制
+MAINFRAME	主界面、命令
+DIRECTDRAW	绘图
+
+中文化：
+VirtuaNES.rc	Line 728	定义资源
+ROM.CPP		Line 44		ROM资源调入
+PPU.CPP		Line 43		FONT资源调入
+		Line 314	汉字译码
